@@ -1,0 +1,26 @@
+{
+	"name": "onceinteractive",
+	"version": "1.0.0",
+	"description": "Mobile App for Onceinteractive",
+	"main": "index.js",
+	"repository": {
+        "type": "git",
+        "url": "git@github.com:onceinteractive/first-app.git"
+    },
+    "private": "true",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+  	},
+	"author": "Nolan",
+  	"license": "MIT",
+  	"engines": {
+        "node": ">=0.8.0",
+        "npm": ">=1.1.0"
+	},
+	"dependencies": {
+	    "connect": "2.15.0",
+	    "connect-phonegap": "0.9.1"
+	},
+	"devDependencies": {
+	}
+}
