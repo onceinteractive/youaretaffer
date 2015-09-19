@@ -14,9 +14,9 @@ angular.module('onceinteractive', ['ionic'])
     })
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('/home', {
+            .state('/', {
                 templateUrl: "templates/home.html",
-                controller: 'HomeCtrl'
+                //controller: 'HomeCtrl'
             })
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/');
     });
