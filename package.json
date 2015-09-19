@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"repository": {
         "type": "git",
-        "url": "git@github.com:onceinteractive/first-app.git"
+        "url": "https://github.com/onceinteractive/youaretaffer.git"
     },
     "private": "true",
 	"scripts": {
