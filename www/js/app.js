@@ -14,56 +14,9 @@ angular.module('onceinteractive', ['ionic', 'onceinteractive.controllers', 'once
     })
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('auth', {
-                url: "/auth",
-                cache: false,
-                abstract: true,
-                templateUrl: "templates/auth.html"
+            .state('/home', {
+                templateUrl: "templates/home.html",
+                controller: 'HomeCtrl'
             })
-            .state('auth.signin', {
-                url: '/signin',
-                cache: false,
-                views: {
-                    'auth-signin': {
-                        templateUrl: 'templates/auth-signin.html',
-                        controller: 'SignInCtrl'
-                    }
-                }
-            })
-            .state('auth.signup', {
-                url: '/signup',
-                cache: false,
-                views: {
-                    'auth-signup': {
-                        templateUrl: 'templates/auth-signup.html',
-                        controller: 'SignUpCtrl'
-                    }
-                }
-            })
-            .state('bucket', {
-                url: "/bucket",
-                abstract: true,
-                cache: false,
-                templateUrl: "templates/bucket.html"
-            })
-            .state('bucket.list', {
-                url: '/list',
-                cache: false,
-                views: {
-                    'bucket-list': {
-                        templateUrl: 'templates/bucket-list.html',
-                        controller: 'myListCtrl'
-                    }
-                }
-            })
-            .state('bucket.completed', {
-                url: '/completed',
-                views: {
-                    'bucket-completed': {
-                        templateUrl: 'templates/bucket-completed.html',
-                        controller: 'completedCtrl'
-                    }
-                }
-            })
-        $urlRouterProvider.otherwise('/auth/signin');
+        $urlRouterProvider.otherwise('/home');
     });
