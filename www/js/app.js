@@ -17,6 +17,6 @@ angular.module('onceinteractive', ['ionic'])
 
       $stateProvider.state('home', {
         url: '/',
-        template: 'templates/home.html'
+        templateUrl: 'templates/home.html'
       })
     })
