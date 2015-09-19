@@ -13,10 +13,10 @@ angular.module('onceinteractive', ['ionic'])
         });
     })
     .config(function($stateProvider, $urlRouterProvider) {
-        $stateProvider
-            .state('/', {
-                templateUrl: "templates/home.html",
-                //controller: 'HomeCtrl'
-            })
-        $urlRouterProvider.otherwise('/');
-    });
+      $urlRouterProvider.otherwise('/')
+
+      $stateProvider.state('home', {
+        url: '/',
+        template: '<p>Hello, world!</p>'
+      })
+    })
